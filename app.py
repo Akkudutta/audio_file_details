@@ -17,7 +17,7 @@ def get_file_info(file_contents, file_extension):
         channels = audio_file.channels
 
     if file_extension == "mp3":
-        bit_depth = "16-bit"  # Set bit depth to 16-bit for mp3 files
+        bit_depth = "000016"  # Set bit depth to 16-bit for mp3 files
 
     return sample_rate, bit_depth, channels
 
