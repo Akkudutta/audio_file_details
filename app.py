@@ -39,7 +39,7 @@ if uploaded_file is not None:
         # Create a data dictionary with "File Name," "Sample Rate," "Bit Depth," and "No of Channels"
         data = {
             "Attribute": ["File Name", "Sample Rate", "Bit Depth", "No of Channels"],
-            "Value": [file_name, f"{sample_rate/1000} kHz", bit_depth, channels],
+            "Value": [file_name, f"{sample_rate/1000} kHz", bit_depth[4:], channels],
         }
         # Display the table without row and column labels using CSS
         st.markdown(
